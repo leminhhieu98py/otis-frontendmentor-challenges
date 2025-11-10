@@ -1,0 +1,28 @@
+{
+  "name": "otis-frontendmentor-challenges",
+  "version": "1.0.0",
+  "description": "Even as a mid-level frontend engineer, I’m starting fresh. I’m Otis, and I’ll tackle every Frontend Mentor challenge with consistency, passion, and a mission to grow stronger every day.",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leminhhieu98py/otis-frontendmentor-challenges.git"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/leminhhieu98py/otis-frontendmentor-challenges/issues"
+  },
+  "homepage": "https://github.com/leminhhieu98py/otis-frontendmentor-challenges#readme",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "3.6.2"
+  }
+}
