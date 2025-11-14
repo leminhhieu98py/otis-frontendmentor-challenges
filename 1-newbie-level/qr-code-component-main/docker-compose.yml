@@ -1,0 +1,11 @@
+services:
+  dev-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '7979:7979'
+    working_dir: /qr-code-component-main
+    volumes:
+      - .:/qr-code-component-main
+    command: npm run start
