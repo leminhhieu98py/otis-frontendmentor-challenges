@@ -13,7 +13,7 @@ This repository is dedicated to completing all challenges from [Frontend Mentor]
   ```
     otis-frontendmentor-challenges
     ├── 1-newbie-level
-    │   └── qr-code-component-main
+    │   └── qr-code-component
     │       └── ...
     └── 2-junior-level
         └── some-other-challenge

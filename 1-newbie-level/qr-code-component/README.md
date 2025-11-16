@@ -21,8 +21,8 @@ Solution for the [Frontend Mentor QR code component challenge](https://www.front
 
 ### Links
 
-- [Solution URL](https://github.com/leminhhieu98py/otis-frontendmentor-challenges/tree/main/1-newbie-level/qr-code-component-main)
-- [Live Site URL](https://leminhhieu98py.github.io/otis-frontendmentor-challenges/1-newbie-level/qr-code-component-main/)
+- [Solution URL](https://github.com/leminhhieu98py/otis-frontendmentor-challenges/tree/main/1-newbie-level/qr-code-component)
+- [Live Site URL](https://leminhhieu98py.github.io/otis-frontendmentor-challenges/1-newbie-level/qr-code-component/)
 
 ## Features & Tech Stack
 
