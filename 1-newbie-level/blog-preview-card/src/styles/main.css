@@ -2,4 +2,87 @@
 @import url('./_variables.css');
 @import url('./_presets.css');
 
-/* My style here */
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+  padding: var(--space-300);
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--gray-950);
+  box-shadow: var(--space-100) var(--space-100) 0 var(--gray-950);
+}
+
+.card__thumbnail {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: no-repeat center url('../../assets/images/illustration-article.svg');
+}
+
+.card__information {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-150);
+}
+
+.card__category-wrapper {
+  display: flex;
+  gap: spar(--space-100);
+}
+
+.card__category-item {
+  padding: var(--space-50) var(--space-150);
+  background-color: var(--primary-color);
+  border-radius: var(--space-50);
+  display: flex;
+  align-items: center;
+}
+
+.card .single-line-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.card .three-line-ellipsis {
+  width: 100%;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-150);
+}
+
+.card__author img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 384px;
+  }
+
+  .card__blog-tile:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+}

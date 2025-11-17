@@ -1,1 +1,67 @@
-/* My style here */
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2') tech('variations');
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../assets//fonts/Figtree-Italic-VariableFont_wght.ttf') format('woff2')
+    tech('variations');
+  font-weight: 300 900;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+.text-preset-1 {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--gray-950);
+}
+
+.text-preset-2 {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray-500);
+}
+
+.text-preset-3 {
+  font-weight: 500;
+  font-size: var(--space-150);
+}
+
+.text-preset-3-bold {
+  font-weight: 800;
+  font-size: var(--space-150);
+  color: var(--gray-950);
+}
+
+.text-preset-1,
+.text-preset-2,
+.text-preset-3,
+.text-preset-3-bold {
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 375px) {
+  .text-preset-1 {
+    font-size: var(--space-300);
+  }
+
+  .text-preset-2 {
+    font-size: 16px;
+  }
+
+  .text-preset-3 {
+    font-size: 14px;
+  }
+
+  .text-preset-3-bold {
+    font-size: 14px;
+  }
+}
