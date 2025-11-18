@@ -1,0 +1,41 @@
+name: Level 1 - Deploy Blog Preview Card
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '1-newbie-level/blog-preview-card/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 1-newbie-level/blog-preview-card
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./1-newbie-level/blog-preview-card/dist
+          publish_branch: gh-pages
+          destination_dir: 1-newbie-level/blog-preview-card
