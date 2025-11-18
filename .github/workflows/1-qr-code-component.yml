@@ -12,30 +12,10 @@ permissions:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: 1-newbie-level/qr-code-component
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./1-newbie-level/qr-code-component/dist
-          publish_branch: gh-pages
-          destination_dir: 1-newbie-level/qr-code-component
+    name: QR Code Component
+    uses: ./.github/workflows/github-action-and-gh-page.yml
+    with:
+      workflow-name: Level 1 - QR Code Component
+      working-dir: 1-newbie-level/qr-code-component
+    secrets:
+      DEPLOY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
