@@ -48,6 +48,10 @@ main {
   align-items: center;
 }
 
+.card__blog-tile {
+  text-decoration: none;
+}
+
 .card .single-line-ellipsis {
   white-space: nowrap;
   overflow: hidden;

@@ -16,11 +16,12 @@
   </head>
   <body>
     <main>
-      <div class="card">
+      <h1 hidden>The blog page with blog card items to preview the blog</h1>
+      <article class="card">
         <div class="card__thumbnail">
           <img
             src="../assets/images/illustration-article.svg"
-            alt=""
+            alt="HTML & CSS foundations thunmbnail"
           />
         </div>
         <div class="card__information">
@@ -28,7 +29,11 @@
             <span class="card__category-item text-preset-3-bold">Learning</span>
           </div>
           <time class="card__published-at text-preset-3">Published 21 Dec 2023</time>
-          <p class="card__blog-tile text-preset-1 single-line-ellipsis">HTML & CSS foundations</p>
+          <a
+            href="/blog/html-css-foundations"
+            class="card__blog-tile text-preset-1 single-line-ellipsis"
+            >HTML & CSS foundations</a
+          >
           <p class="card__blog-description text-preset-2 three-line-ellipsis">
             These languages are the backbone of every website, defining structure, content, and
             presentation.
@@ -37,12 +42,12 @@
         <div class="card__author">
           <img
             src="../assets/images/image-avatar.webp"
-            alt="author_avatar"
+            alt="HTML & CSS foundations author avatar"
             class="card__author"
           />
           <span class="card__author-name text-preset-3-bold">Greg Hooper</span>
         </div>
-      </div>
+      </article>
     </main>
   </body>
 </html>
