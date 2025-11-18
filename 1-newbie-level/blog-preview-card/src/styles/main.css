@@ -27,7 +27,6 @@ main {
   height: 200px;
   overflow: hidden;
   border-radius: 10px;
-  background: no-repeat center url('../../assets/images/illustration-article.svg');
 }
 
 .card__information {
